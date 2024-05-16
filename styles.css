@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+  background-image: url('grad2024.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.invitation {
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.handwritten {
+  font-family: 'Dancing Script', cursive;
+}
+
+.bounce {
+  animation: bounce 0.5s ease infinite alternate; /* Bounce animation */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px); /* Start position */
+  }
+  50% {
+    transform: translateY(5px); /* Middle position */
+  }
+  100% {
+    transform: translateY(-5px); /* End position */
+  }
+}
+
+.glow {
+  color: #a18902; /* Gold color */
+  text-shadow: 0 0 10px #ffd700; /* Less glow effect */
+}
+
+#countdown {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.event-details {
+  font-size: 18px;
+  margin: 20px 0;
+  color: rgb(1, 5, 24);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #008CBA;
+  color: white;
+  font-size: 16px;
+}
+
+button:active {
+  background-color: #005f73;
+}
+
+.attendees {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attendees ul {
+  list-style-type: none;
+  padding: 0;
+}

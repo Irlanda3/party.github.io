@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Dancing+Script:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="invitation">
+    <h1 class="handwritten glow bounce">Celebrating Alma's Graduation</h1>
+    <p>We're throwing a party!</p>
+    <p>We're thrilled to invite you to celebrate Alma's achievement of obtaining a Master's Degree in Biomedical Science.</p>
+    <p>Date: Saturday, May 18th, 2024</p>
+    <p>Time: Saturday, May 18, 2024 - 3:00 PM</p>
+    <p>Location: Ellie Caulkins Opera House
+      1245 Champa St
+      Denver, CO 80204</p>
+    <p>Please join us for a reception at 174 S. Hooker St. Denver CO, 80219</p>
+    <div id="countdown"></div>
+    
+    <!-- New Event Details Section -->
+    <div class="event-details">
+      <p>Food being served from 6 PM to 8:30 PM</p>
+      <p>Mariachi playing at 7 PM</p>
+    </div>
+    
+    <button id="confirmButton" onclick="confirmAttendance('yes')">Yes, I'll be there!</button>
+    <button id="declineButton" onclick="confirmAttendance('no')">Sorry, can't make it</button>
+  </div>
+  
+  <!-- Section to display attendees -->
+  <div class="attendees">
+    <h2>Attendees</h2>
+    <ul id="attendeesList"></ul>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
